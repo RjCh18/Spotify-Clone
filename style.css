@@ -7,3 +7,14 @@ body{
     background-color: black;
     color: white;
 }
+img{
+filter: invert(1);
+}
+
+.left{
+    width: 25vw;
+}
+
+.right{
+    width: 75vw;
+}
