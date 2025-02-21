@@ -3,18 +3,66 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     background-color: black;
     color: white;
+    font-family: 'Roboto';
 }
+
 img{
-filter: invert(1);
+/* filter: invert(1); */
+margin-bottom: 22px;
 }
 
 .left{
     width: 25vw;
+    padding: 7px;
 }
 
 .right{
     width: 75vw;
+}
+
+.e-9640-icon{
+    filter: invert(1);
+}
+
+.home ul{
+    padding: 5px;
+}
+
+.home ul li{
+    list-style-type: none;
+    width: 30 px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.home{
+    padding: 10px;
+    
+}
+.lib{
+    filter: invert(1);
+    width: 18px;
+}
+
+.plus{
+    justify-content: end;
+}
+
+.library{
+    margin-top: 16px;
+    padding: 15px;
+}
+
+
+.library ul{
+    display: flex;
+    list-style: none;
+    gap: 12px;
 }

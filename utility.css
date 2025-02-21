@@ -14,3 +14,12 @@
 .items-center{
     align-items: center;
 }
+
+.bg-grey{
+    background-color: #121212 ;
+    color: white;
+}
+
+.rounded{
+    border-radius: 10px;
+}
