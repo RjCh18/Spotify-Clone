@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 body{
     background-color: black;
     color: white;
@@ -51,13 +52,12 @@ margin-bottom: 22px;
     width: 18px;
 }
 
-.plus{
-    justify-content: end;
-}
 
 .library{
     margin-top: 16px;
     padding: 15px;
+    min-height: 62vh;
+    position: relative;
 }
 
 
@@ -65,4 +65,35 @@ margin-bottom: 22px;
     display: flex;
     list-style: none;
     gap: 12px;
+}
+
+.library-list {
+    display: flex;
+    align-items: center; 
+    padding: 0; 
+}
+
+.library-item {
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+}
+
+.plus {
+    margin-left: auto; 
+}
+
+.links a{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}
+
+.links{
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
 }
