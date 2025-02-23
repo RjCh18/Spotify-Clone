@@ -19,12 +19,13 @@ margin-bottom: 22px;
 }
 
 .left{
-    width: 25vw;
-    padding: 7px;
+    width: 24vw;
+    padding: 8px;
 }
 
 .right{
-    width: 75vw;
+    width: 74vw;
+    margin-top: 8px;
 }
 
 .e-9640-icon{
@@ -96,4 +97,14 @@ margin-bottom: 22px;
     position: absolute;
     bottom: 0;
     padding-bottom: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header > *{
+    padding: 15px;
 }

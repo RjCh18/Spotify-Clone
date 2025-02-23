@@ -23,3 +23,8 @@
 .rounded{
     border-radius: 10px;
 }
+
+
+.imgf{
+    filter: invert(1);
+}
