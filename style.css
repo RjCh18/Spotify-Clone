@@ -108,3 +108,32 @@ margin-bottom: 22px;
 .header > *{
     padding: 15px;
 }
+
+.playlists{
+    padding: 0px 18px;
+
+}
+
+.cardContainer{
+    display: flex;
+}
+
+.playlists .card{
+    margin: 22px 10px;
+    width: 180px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #252525;
+
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.card p{
+    margin-top: 5px;
+    font-size: 12px;
+}
