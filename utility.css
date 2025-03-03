@@ -28,3 +28,29 @@
 .imgf{
     filter: invert(1);
 }
+
+
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333; /* Darker thumb */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Slightly lighter on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-color: #333 #1a1a1a;
+    scrollbar-width: thin;
+}

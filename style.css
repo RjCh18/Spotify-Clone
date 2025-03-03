@@ -5,7 +5,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@media (max-width: 768px) {
+    .playlists .card {
+        width: 45%; /* Adjust width for smaller screens */
+    }
+}
 
+@media (max-width: 480px) {
+    .playlists .card {
+        width: 100%; /* Full width for mobile devices */
+    }
+}
 
 body{
     background-color: black;
@@ -116,6 +126,9 @@ margin-bottom: 22px;
 
 .cardContainer{
     display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 50vh;
 }
 
 .playlists .card{
@@ -136,4 +149,16 @@ margin-bottom: 22px;
 .card p{
     margin-top: 5px;
     font-size: 12px;
+}
+
+.card{
+    position: relative;
+}
+
+.play{
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    opacity: 0;
+    transition: all 1s ease-out;
 }
