@@ -57,6 +57,7 @@ margin-bottom: 22px;
 
 .home{
     padding: 10px;
+    height: 120px;
     
 }
 .lib{
@@ -66,7 +67,7 @@ margin-bottom: 22px;
 
 
 .library{
-    margin-top: 16px;
+    margin-top: 14px;
     padding: 15px;
     min-height: 62vh;
     position: relative;
@@ -95,15 +96,22 @@ margin-bottom: 22px;
     margin-left: auto; 
 }
 
+footer{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
 .links a{
     text-decoration: none;
     color: grey;
-    font-size: 12px;
+    font-size: 11px;
+   
 }
 
 .links{
+   
     display: flex;
-    gap: 14px;
+    gap: 10px;
     flex-wrap: wrap;
     position: absolute;
     bottom: 0;
@@ -131,6 +139,7 @@ margin-bottom: 22px;
     flex-wrap: wrap;
     overflow-y: scroll;
     max-height: 50vh;
+    margin-top: 20px;
 }
 
 .playlists .card{
@@ -205,22 +214,38 @@ margin-bottom: 22px;
 
 .playbar{
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     padding: 12px;
     background-color: rgb(66, 108, 66);
     width: 94%;
-    margin: 0 0 12px 0;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 14px;
+    height: 18px;
 }
 
 .songbtns{
     display: flex;
     justify-content: center;
     gap: 16px;
+    margin-top: -9px;
+}
+
+.aha{
+    width: 24px;
+    height: 24px;
+}
+.songbtns :hover{
+    cursor: pointer;
 }
 
 .songlist{
     padding: 24px 20px;
+    height: 260px;
+    overflow: auto;
+    margin: 15px 0px;
 }
+
 
 .songlist ul {
     display: block;
@@ -230,10 +255,60 @@ margin-bottom: 22px;
 .songlist ul li{
     list-style-type: decimal;
     /* margin-bottom: 10px; */
-    font-size: 14px;
+    font-size: 11px;
     display: flex;
     gap: 30px;
     cursor: pointer;
     padding: 10px 0px;
 }
 
+
+
+.songlist ul li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between icon and text */
+    font-size: 0.9rem; /* Base font size */
+}
+
+.songlist ul li svg {
+    width: 24px; /* Set a fixed width for the play icon */
+    height: 24px; /* Set a fixed height for the play icon */
+}
+
+.songlist ul li .info {
+    flex-grow: 1; /* Allow text to take available space */
+}
+
+.songlist ul li .info div {
+    font-size: 0.9rem; /* Adjust font size for song name and artist */
+}
+
+.seekBar{
+    height: 5px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px;
+    margin: 6px;
+    background-color: rgb(204, 197, 197);
+    cursor: pointer;
+}
+
+.circle{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    left: 0%;
+    bottom: 5px;
+    transition: left 0.5s;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    width: 100%;
+}
