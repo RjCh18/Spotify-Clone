@@ -54,3 +54,8 @@
     scrollbar-color: #333 #1a1a1a;
     scrollbar-width: thin;
 }
+
+
+.invert{
+    filter: invert(1);
+}

@@ -36,6 +36,7 @@ margin-bottom: 22px;
 .right{
     width: 74vw;
     margin-top: 8px;
+    position: relative;
 }
 
 .e-9640-icon{
@@ -112,6 +113,7 @@ margin-bottom: 22px;
 .header{
     display: flex;
     justify-content: space-between;
+    height: 80px;
     
 }
 
@@ -162,3 +164,76 @@ margin-bottom: 22px;
     opacity: 0;
     transition: all 1s ease-out;
 }
+
+.buttons > *{
+    margin: 0px 8px;
+}
+
+.SignUpBtn{
+    background-color: #121212;
+    color: rgb(112, 106, 106);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.SignUpBtn:hover{
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+.LoginBtn{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    width: 75px;
+    
+}
+
+.LoginBtn:hover{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+    background-color: rgb(66, 108, 66);
+    width: 94%;
+    margin: 0 0 12px 0;
+}
+
+.songbtns{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.songlist{
+    padding: 24px 20px;
+}
+
+.songlist ul {
+    display: block;
+    padding: 0;
+}
+
+.songlist ul li{
+    list-style-type: decimal;
+    /* margin-bottom: 10px; */
+    font-size: 14px;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
