@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+:root{
+    --a:0;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @media (max-width: 768px) {
@@ -165,19 +169,21 @@ footer{
 
 .card{
     position: relative;
+    transition: all .4s;
 }
 
 .card:hover{
-    background-color: black;
+    background-color: rgb(99, 97, 97);
     cursor: pointer;
+    --a:1;
 }
 
 .play{
     position: absolute;
     top: 150px;
     right: 12px;
-    opacity: 0;
-    transition: all 1s ease-out;
+    opacity: var(--a);
+    transition: all .6s ease-out;
 }
 
 .buttons > *{
@@ -378,7 +384,7 @@ footer{
     .playbar{
         position: fixed;
         bottom: 20px;
-        width: 48vw;
+        width: 80vw;
         font-size: 9px;
         margin: 0;
         display: flex;
@@ -392,6 +398,10 @@ footer{
         display: block;
     }
 
+    .cardContainer{
+        overflow: auto;
+        width: 90vw;
+    }
     .close{
         display: block;
     }
@@ -402,5 +412,13 @@ footer{
     }
 }
 
+.card h3{
+    margin-top: 8px;
+    margin-left: 5px;
+}
 
-
+.card p{
+    margin-left: 5px;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
